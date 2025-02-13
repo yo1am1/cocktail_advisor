@@ -14,7 +14,6 @@ A **Streamlit + FastAPI** application for cocktail recommendations using a **FAI
 4. [Running the Backend (FastAPI)](#running-the-backend-fastapi)
 5. [Running the Frontend (Streamlit)](#running-the-frontend-streamlit)
 6. [Usage](#usage)
-7. [Additional Notes](#additional-notes)
 
 ---
 
@@ -28,6 +27,7 @@ A **Streamlit + FastAPI** application for cocktail recommendations using a **FAI
 
 ## Project Structure
 
+```
 cocktail-advisor/
 │
 ├─ app/
@@ -44,6 +44,7 @@ cocktail-advisor/
 └─ data/
 └─ faiss/
 └─ vector_cocktails/... # Where your FAISS index is stored
+```
 
 - **`recommender_api.py`**: Main FastAPI file, defines endpoints for `/chat` and `/retrieve_recommendations`.
 - **`streamlit_app.py`**: The Streamlit UI entry point (or your custom `py` with `st.chat_input` logic).
